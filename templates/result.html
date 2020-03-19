@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="center-block">
+        <h1>Here is your encoded result:</h1>
+        {{ result|safe }}
+        <br>
+        <a href="uploads/{{ download_path }}" type="button" class="btn btn-primary" role="button">Download</a>
+    </div>
+{% endblock %}
